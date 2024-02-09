@@ -13,8 +13,7 @@ public class MainActivity extends AppCompatActivity
     }
     @Override
     public void firstReceive(String data) {
-        SecondFragment sendFragment = (SecondFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.fragment_second);
+        SecondFragment sendFragment = (SecondFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_second);
         assert sendFragment != null;
         sendFragment.dataReceived(data);
     }
